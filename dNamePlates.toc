@@ -1,0 +1,7 @@
+## Interface: 30300
+## Author: Caellian, Dawn
+## Title: |cff01DFD7d|r|cffffffffNameplates|r
+## Notes: Custom minimalistic nameplates based on caelNamePlates
+
+config.lua
+dNamePlates.lua

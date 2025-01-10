@@ -1,0 +1,91 @@
+Minimalistic and lightweight nameplates, easily customizable.
+
+Features
+* added config via (config.lua)
+* added SpellIcon
+* added class icon (only visible for hostile players)
+* added 3 icon sets of class textures (oldClassIcons, newClassIcons)
+- you can choose a different one, via config
+- you might have to adjust the size of the icon, depending on the texture you choose
+* added health percent and current health value (you can choose one of them or both at once or none)
+- value is hidden @100%
+- value is colored yellow between 35% and 20%
+- value is colored red below 20%
+* changed appearance (texture, font, colors)
+* added hankthetank's raidicon textures
+* show hostile nameplates in combat and/or optionally hide them out of combat
+* added an option to show/hide a shadow behind text (disabled by default)
+...
+
+FAQ
+
+1. Where'z teh options?
+Take a look into your World of Warcraft folder: Interface\Addons\dNamePlates\config.lua. You can open this file with Wordpad, Notepad or any other text editor. I recommend Notepad++ - it's free, google it.
+
+note: If you change anything, you have to reload your interface, either via /rl, /console reloadui or log out ingame.
+
+
+2. How do I change the font?
+One of the things you can change via config.lua is the font. There are 2 options to be exactly. You can choose to use a different font for text (names) and numbers, or use the same for both.
+dNamePlates comes with a few fonts (take a look at Interface\Addons\dNamePlates\media). You can add your own fonts easily, Just copy them into dNamePlates's media folder and add them via config.lua.
+If you want to get rid of those pixel fonts, I recommend using the Prototype font that comes with dNamePlates.
+
+
+Credits:
+Caelian - for caelNamePlates
+hankthetank - raid icon texture
+Cyprias - for helping me to improve the code
+
+
+Changelog:
+
+r9
+* nicer raidicon position...
+
+r8
+* replaced the "glow border" with a solid border, to match my oUF layout
+* added an option to change the border color
+* long names will be abbreviated, to match my oUF layout (for example: Sunreaver Mage Guardian becomes S. M. Guardian)
+* added an option to change the maximum number of characters before a name gets abbreviated
+* revised class icon code
+* added new border to class icon
+* some tweaks
+* removed the class icon textures from the package and use blizzards default textures instead - reduced package size FTW ...
+* removed some more unused textures and fonts from the package - reduced package size FTW ... #2
+
+r7 
+* added an option to change the position of the nameplate (X and Y Offset)
+* cleaned up some code and improved PlateBuffs compatibility
+
+r6
+* added class icon (only visible for hostile players)
+* added 3 icon sets of class textures (oldClassIcons, newClassIcons, newClassIconsB)
+- you can choose a different one, via config 
+- you might have to adjust the size of the icon, depending on the texture you choose
+* added hankthetanks's raidicon textures
+* added an icon texture (dBBorderJ) for castbars spell icon
+* added a new mouseover highlight texture and made the highlight slightly more visible
+* added a more flat bartexture (dM2) and set it as default
+* level text font shadow can be turned on/off via "showFontShadow", too
+
+r5
+* possible fix for r4 nil error, everyone but myself seems to enounter - D'OH! #2
+ 
+r4
+* added current health value as a possible shown health value
+* added an option to show/hide current health value
+* added an option to show/hide percent health value
+- if both options are true it will show both, current AND percent health value
+
+r3
+* possible fix for a nil error everyone but myself seems to enounter - D'OH! 
+
+r2
+* added an option to turn auto show nameplates in combat on/off
+* added auto hide nameplates out of combat (disabled by default)
+* added an option to turn auto hide nameplates out of combat on/off
+* added an option to show/hide a shadow behind text (disabled by default)
+* removed some fonts
+
+r1
+* initial release
